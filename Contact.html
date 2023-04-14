@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdeliver.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <div id="main">
+  <div class="logo"></div>
+  <nav class="links">
+    <ul>
+      <li><a href="index.html"class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="toggle_btn">
+     <i class="fa-solid fa-bars"></i>
+    </div>
+</div>  
+
+<div class="dropdown_menu">
+        
+            <li><a href="index.html"class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+</div>
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+
+    toggleBtn.onclick = function () {
+     dropDownMenu.classList.toggle('open')
+     const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+}
+</script>
+
+</div>
+  <body>
+    <div class="registration">
+    <div class="registration_container">
+    <div class="registration_image">
+    <div class="overlay"></div>
+    <h1 class="contacttitle">Contact Us<br /> Here </h1>   
+    </div>
+    <form action="" class="registration__form">
+    <h1 class="logtiltle"> Please Create Your Account </h1>
+    <div class="rowname">
+     <div class="col-sm-6 mb-4">
+     <label for="firstName" class="form-label"> First Name </label>
+      <input type="text"
+      class="form-control1" 
+      id="firstName" 
+      name="firstName" />
+    </div>
+
+      <div class="col-sm-6 mb-4">
+      <label for="lastName" class="form-label"> Last Name </label>
+      <input type="text"
+      class="form-control1" 
+      id="lastName" 
+      name="lastName" />
+    </div>
+    </div>
+
+    <div class="col-sm-12 mb-4">
+     <label for="email" class="form-label"> Email    : </label>
+     <input type="email"
+      class="form-control1" 
+      id="email" 
+      name="email" />
+    </div>
+
+    <div class="rowpass">
+    <div class="col-sm-6 mb-4">
+    <label for="password" class="form-label"> Password </label>
+    <input type="password" class="form-control1" id="password"  name="password" />
+    </div>
+    
+    <div class="col-sm-6 mb-4">
+    <label for="confirmPassword" class="form-label"> Confirm Password </label>
+    <input type="confirmPassword" class="form-control1" id="confirmPassword"  name="confirmPassword" />
+    </div>
+    </div>
+   
+    <label class="gender" class="form-label w-100"> Gender </label>
+
+    <div class="form-check">
+    <div class="col-sm-12 mb-4">
+    
+    <input type="radio" name="gender"
+    id="male" class="form-checkin" />
+    <label for="male" class="form-label" > Male </label>
+    
+    <input type="radio" name="gender"
+    id="female" class="form-checkin" />
+    <label for="male" class="form-label" > Female </label>
+    </div>
+    </div>
+
+    <label id ="form-grouptext">Enter Captcha:</label>
+    <div class="form-row">
+     <div class="form-group col-md-6">
+       <input type="text" class="form-control" readonly id="capt">
+        </div>
+        <div class="form-group col-md-6">
+        <input type="text" class="form-control" id="textinput" placeholder="Type Captcha Here">
+        </div>
+      </div>
+      <div class="form-group">
+  <button onclick="validcap()" class="buttonformgroup">
+  Send</button>
+      </div>
+  <div class="capchaimg">
+  <h6>Captcha not visible <img src="refresh.jpg" width="31px" onclick="cap()"></h6>
+ </div>
+  
+    <a style="text-decoration: none" href="login.html">
+    <div class="col-sm-12 mb-4">
+    <input type="button" class="btn" value="Click Here" />
+    </div></a>
+    <div class="endtext">
+    <p> You already have an account! <a href="login.html"> >> Please Log-in Here << </a></p>
+    </div>
+    </form>
+
+    </div>
+    </div>
+    
+    <script type="text/javascript">
+
+    function cap(){
+    var alpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V'
+                 ,'W','X','Y','Z','1','2','3','4','5','6','7','8','9','0','a','b','c','d','e','f','g','h','i',
+                 'j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', '!','@','#','$','%','^','&','*','+'];
+                 var a = alpha[Math.floor(Math.random()*71)];
+                 var b = alpha[Math.floor(Math.random()*71)];
+                 var c = alpha[Math.floor(Math.random()*71)];
+                 var d = alpha[Math.floor(Math.random()*71)];
+                 var e = alpha[Math.floor(Math.random()*71)];
+                 var f = alpha[Math.floor(Math.random()*71)];
+
+                 var final = a+b+c+d+e+f;
+                 document.getElementById("capt").value=final;
+               }
+               function validcap(){
+                var stg1 = document.getElementById('capt').value;
+                var stg2 = document.getElementById('textinput').value;
+                if(stg1==stg2){
+                  alert("Form is validated Succesfully");
+                  return true;
+                }else{
+                  alert("Please enter a valid captcha");
+                  return false;
+                }
+               }
+  </script>
+  
+  </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+</html>

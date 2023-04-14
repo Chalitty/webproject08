@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Our Team</title>
+	<link href="https://cdn.jsdeliver.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<div id="main">
+	<div class="logo"></div>
+	<nav class="links">
+		<ul>
+			<li><a href="index.html"class="active">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="team.html">Team</a></li>
+			<li><a href="service.html">Service</a></li>
+			<li><a href="contact.html">Contact</a></li>
+	    </ul>
+    </nav>
+    <div class="toggle_btn">
+     <i class="fa-solid fa-bars"></i>
+    </div>
+</div>  
+
+<div class="dropdown_menu">
+        
+            <li><a href="index.html"class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+</div>
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+
+    toggleBtn.onclick = function () {
+     dropDownMenu.classList.toggle('open')
+     const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+}
+</script>
+
+
+<body>
+	<section class="team">
+		<div class="container">
+		<div class="row">
+			<div class="section-title">
+				<h1>Our Team</h1>
+			<hr>
+			</div>
+
+		<div class="row1">
+
+		<div class="team-item">
+		<div class="img-box">
+		<img src="Team1.jpg" alt="Team-1" style="width:100%">
+	    </div>
+		
+		<h3>Jessica Müller</h3>	
+		<p>Managing Director(CEO)</p>
+		<center>
+		<a class="Tbutton" href="contact.html"><button class="button" id="buttonteam">Contact</button></a></center>
+	    </div> 	
+	    
+		<div class="team-item">
+		<div class="img-box">
+		<img src="Team2.jpg" alt="Team-2" style="width:100%">
+	    </div>
+	    	
+		
+		<h3>Kittisak Jarupak</h3>	
+		<p>Chief Operating Officer(COO)</p>
+		<center>
+		<a class="Tbutton" href="contact.html"><button class="button" id="buttonteam">Contact</button></a></center>
+		</div>
+
+		
+		<div class="team-item">
+		<div class="img-box">
+		<img src="Team3.jpg" alt="Team-3" style="width:100%">
+	    </div>
+	
+		
+		<h3>Leon Bachmann</h3>	
+		<p>General Manager(GM)</p>
+		<center>
+		<a class="Tbutton" href="contact.html"><button class="button" id="buttonteam">Contact</button></a></center>
+		</div>
+	    
+		</div>
+		<div class="team-item1">
+		<div class="img-box">
+		<img src="Team4.jpg" alt="Team-4" style="width:100%">
+	    </div>
+	
+	
+		<h3>Océane Friedli</h3>	
+		<p>Chief Financial Officer(CFO)</p>
+		<center>
+		<a class="Tbutton" href="contact.html"><button class="button" id="buttonteam">Contact</button></a></center>
+		</div>
+
+		<div class="team-item1">
+		<div class="img-box">
+		<img src="Team5.jpg" alt="Team-5" style="width:100%">
+		</div>
+			
+		<h3>Nanpanat Srisomjit</h3>	
+		<p>Finance Assistant</p>
+		<center>
+		<a class="Tbutton" href="contact.html"><button class="button" id="buttonteam">Contact</button></a></center>
+		</div>
+		
+		<div class="team-item1">
+		<div class="img-box">
+		<img src="Team6.jpg" alt="Team-6" style="width:100%">
+		</div>	
+		
+		<h3>Paul Eichenberger</h3>	
+		<p>Senior Research Associate</p>
+		<center>
+		<a class="Tbutton" href="contact.html"><button class="button" id="buttonteam">Contact</button></a></center>
+		</div>
+
+		<div class="team-item2">
+		<div class="img-box">
+		<img src="Team07.jpg" alt="Team-7" style="width:100%">
+		</div>	
+		
+		<h3>Frederik Wälti</h3>	
+		<p>Researcher</p>
+		<center>
+		<a class="Tbutton" href="contact.html"><button class="button" id="buttonteam">Contact</button></a></center>
+		</div>
+
+		<div class="team-item2">
+		<div class="img-box">
+		<img src="Team8.jpg" alt="Team-8" style="width:100%">
+		</div>	
+		
+		<h3>Tham Sa-Eng</h3>	
+		<p>Senior Data Analyst</p>
+		<center>
+		<a class="Tbutton" href="contact.html"><button class="button" id="buttonteam">Contact</button></a></center>
+		</div>
+
+		<div class="team-item2">
+		<div class="img-box">
+		<img src="Team9.jpg" alt="Team-9" style="width:100%">
+		</div>	
+	
+		<h3>Rinrat Nguyen</h3>	
+		<p>Data Analyst</p>
+		<center>
+		<a class="Tbutton" href="contact.html"><button class="button" id="buttonteam">Contact</button></a></center>
+		</div>
+
+		<div class="team-item3">
+		<div class="img-box">
+		<img src="Team10.jpg" alt="Team-10" style="width:100%">
+		</div>	
+		
+		<h3>Jatupob Rawangpai</h3>	
+		<p>IT Manager</p>
+		<center>
+		<a class="Tbutton" href="contact.html"><button class="button" id="buttonteam">Contact</button></a></center>
+		</div>
+
+		
+		</div>
+		</div>
+		</div>
+        	
+	</section>
+
+
+</body>
+</html>

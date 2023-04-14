@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Us</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<link href="https://cdn.jsdeliver.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+  <div id="main">
+	<div class="logo"></div>
+	<nav class="links">
+		<ul>
+			<li><a href="index.html"class="active">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="team.html">Team</a></li>
+			<li><a href="service.html">Service</a></li>
+			<li><a href="contact.html">Contact</a></li>
+	    </ul>
+    </nav>
+    <div class="toggle_btn">
+     <i class="fa-solid fa-bars"></i>
+    </div>
+</div>  
+
+<div class="dropdown_menu">
+        
+            <li><a href="index.html"class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+</div>
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+
+    toggleBtn.onclick = function () {
+     dropDownMenu.classList.toggle('open')
+     const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+}
+</script>
+
+<body>
+	<section class="about">
+	<div class="mainabout">
+		<div class="aboutsrc">
+		<img src="Aboutt.jpg" alt="aboutsrc"></div>
+		<div class="about-text">
+		<h1>About Us</h1>
+		<h3>"We Are The First Thai Company providing Crypto Research Since 2010"</h3>
+		<p>We are tech start-up with the main focus in crypto and currency exchange research by using A.I. technology gathering DATA.<br> With our aim to transform technology gathering data into reliable research for investment therefore, we are keep maintaining our standards and qualities of the research for the best providing to our customers.<br>Our investment wisdom combined innovation and strong academic integrated through various platforms therefore, the unique results satisfied all investors.</p>
+		<h5>"Run money with data, more profit and less risk." --- CR Thailand Co., Ltd."</h5>
+    </div>
+	</div>
+	</section>
+
+</body>
+</html>
