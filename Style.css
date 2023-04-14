@@ -472,7 +472,7 @@ input[type="submit"]:hover {
 	min-height: 460px;
 }
 .registration_image {
-	background-image: url("contact02.jpg");
+	background-image: url("Contact02.JPG");
 	background-size: cover;
 	background-position: center;
 	display: none;
