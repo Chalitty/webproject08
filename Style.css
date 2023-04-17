@@ -467,6 +467,14 @@ input[type="submit"]:hover {
 	border-radius: 10px;
 
 }
+#error_message {
+	margin-bottom: 15px;
+	padding: 0;
+	background: #FF6347;
+	text-align: center;
+	font-size: 14px;
+	transition: all 0.7s ease;
+}
 .registration_container {
 	display: flex;
 	min-height: 460px;
