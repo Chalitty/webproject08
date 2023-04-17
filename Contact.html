@@ -10,6 +10,7 @@
     
     <title>Contact Us</title>
     <link href="https://cdn.jsdeliver.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="formsubmit.js"></script>
   </head>
 
   <div id="main">
@@ -18,9 +19,9 @@
     <ul>
       <li><a href="index.html"class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="Team.html">Team</a></li>
-      <li><a href="Service.html">Service</a></li>
-      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <div class="toggle_btn">
@@ -32,9 +33,9 @@
         
             <li><a href="index.html"class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="Team.html">Team</a></li>
-            <li><a href="Service.html">Service</a></li>
-            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
 
 </div>
 <script>
@@ -61,8 +62,9 @@
     <div class="overlay"></div>
     <h1 class="contacttitle">Contact Us<br /> Here </h1>   
     </div>
-    <form action="" class="registration__form">
+    <form class="registration__form" id="myformsubmit"  onsubmit="return validation()">
     <h1 class="logtiltle"> Please Create Your Account </h1>
+    <div id="error_message"></div>
     <div class="rowname">
      <div class="col-sm-6 mb-4">
      <label for="firstName" class="form-label"> First Name </label>
@@ -81,8 +83,8 @@
     </div>
     </div>
 
-    <div class="col-sm-12 mb-4">
-     <label for="email" class="form-label"> Email    : </label>
+    <div class="col-sm-6 mb-4">
+     <label for="email" class="form-label"> Email  : </label>
      <input type="email"
       class="form-control1" 
       id="email" 
@@ -103,7 +105,7 @@
    
     <label class="gender" class="form-label w-100"> Gender </label>
 
-    <div class="form-check">
+    <div class="form-check" id="gender">
     <div class="col-sm-12 mb-4">
     
     <input type="radio" name="gender"
@@ -112,7 +114,11 @@
     
     <input type="radio" name="gender"
     id="female" class="form-checkin" />
-    <label for="male" class="form-label" > Female </label>
+    <label for="female" class="form-label" > Female </label>
+
+    <input type="radio" name="gender"
+    id="nonbinary" class="form-checkin" />
+    <label for="nonbinary" class="form-label" > Non-Binary </label>
     </div>
     </div>
 
@@ -135,7 +141,7 @@
   
     <a style="text-decoration: none" href="login.html">
     <div class="col-sm-12 mb-4">
-    <input type="button" class="btn" value="Click Here" />
+    <input type="submit" class="btn" value="Click Here" />
     </div></a>
     <div class="endtext">
     <p> You already have an account! <a href="login.html"> >> Please Log-in Here << </a></p>
